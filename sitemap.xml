@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/index.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/about.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+    <!-- додайте решту сторінок за тим самим зразком -->
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/gallery.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/contacts.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/comparison.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/application.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/about.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nikitaduke112.github.io/lab01-klochkov/pages/resources.html</loc>;
+        <lastmod>2026-09-15</lastmod>
+    </url>
+</urlset>

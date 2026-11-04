@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+ 
+Sitemap: https://nikitaduke112.github.io/lab01-klochkov/sitemap.xml
