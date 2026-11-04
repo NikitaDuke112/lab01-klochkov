@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery of machine learning">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <a href="#main" class="site-title">Перейти до основного вмісту</a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="comparison.html">Порівняння</a></li>
+                <li><a href="gallery.html" aria-current="page">Галерея</a></li>
+                <li><a href="contacts.html">Контакст</a></li>
+                <li><a href="application.html">Заява</a></li>
+                <li class="menu__contacts"><a href="pages/resources.html">Ресурси</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Медіагалерея</h1>
+
+        <h2>Ілюстрації до теми</h2>
+
+        <div class="card-grid">
+            <article class="card">
+                 <picture>
+                    <source srcset="./img/1-1.webp" type="image/webp">
+                    <img src="./img/1-1.jpg" alt="Image" width="1200" height="1500">
+                </picture>
+            </article>
+            <article class="card">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/2-2_768.jpg">
+
+                    <img src="./img/2-2_500.jpg" alt="Обрізаний фрагмент з головним об'єктом" width="500" height="500">
+                </picture>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="./img/2-2_800_task8.jpg" 
+                    srcset="./img/2-2_400_task8.jpg 400w, 
+                    ./img/2-2_800_task8.jpg 800w, 
+                    ./img/2-2_1200_task8.jpg 1200w" 
+                    sizes="(max-width: 400px) 100vw, 
+                    (max-width: 800px) 100vw, 
+                    1200px" 
+                    alt="Image" 
+                    width="1200" height="800">
+
+                    <figcaption>Автор: Krittamet Saehan, Unsplash License</figcaption>
+                </figure>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="img/3-3.jpg" alt="" width="1200" height="800" loading="lazy">
+
+                    <figcaption>Автор: Krittamet Saehan, Unsplash License</figcaption>
+                </figure>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="img/5-5.jpg" alt="Схема етапів роботи алгоритму сортування"
+                        width="1200" height="800" loading="lazy">
+                    <figcaption>Схема показує чотири етапи: розбиття масиву, порівняння
+                        пар елементів, обмін місцями, об'єднання результату. Докладний опис
+                        кожного етапу наведено в тексті розділу «Основні поняття».</figcaption>
+                </figure>
+            </article>
+            <article class="card">
+                <figure>
+                    <a href="pages/resources.html">
+                        <img src="img/6-6.jpg" alt="Перейти до розділу «Ресурси»"
+                            width="1200" height="675" loading="lazy">
+                    </a>
+
+                    <figcaption>Автор: Krittamet Saehan, Unsplash License</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h2>Відео</h2>
+                <video controls width="640" preload="metadata">
+                    <source src="./video/demo.mp4" type="video/mp4">
+                    <track src="./video/demo-uk.vtt" kind="subtitles"
+                        srclang="uk" label="Українські субтитри" default>
+                    <track src="./video/demo-en.vtt" kind="subtitles"
+                        srclang="en" label="English">
+                    Ваш браузер не підтримує відтворення відео.
+                    <a href="./video/demo.mp4">Завантажити файл</a>
+                </video>
+            </article>
+            <article >
+                <h2>Розташування</h2>
+                <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed?bbox=30.73555111885071%2C46.47731353672117%2C30.742449760437015%2C46.479825508997195&amp;layer=mapnik" style="border: 1px solid black" title="Карта Розташування закладу освіти"></iframe><small><a href="https://www.openstreetmap.org/#map=18/46.478570/30.739000">View Larger Map</a></small>
+            </article>
+            <article>
+                <h2>My svg</h2>
+                <img src="./img/my-svg.svg" alt="Піктограма коду" width="500" height="500">
+            </article>
+
+            <article class="card">
+                <h3>Бінарний пошук</h3>
+                <p>Короткий або довгий опис...</p>
+                <a href="resources.html" class="btn">Детальніше</a>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

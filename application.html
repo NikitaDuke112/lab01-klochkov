@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprasion of my something">
+    <title>Application</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <a href="#main" class="site-title">Перейти до основного вмісту</a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про напрям</a></li>
+                <li><a href="comparison.html">Порівняння</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакст</a></li>
+                <li><a href="application.html" aria-current="page">Заява</a></li>
+                <li class="menu__contacts"><a href="pages/resources.html">Ресурси</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Заявка на участь у проєкті</h1>
+
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Відомості про учасника</legend>
+                <label for="fullname">Прізвище та ім'я</label>
+                <input type="text" id="fullname" name="fullname" autocomplete="name" minlength="5" maxlength="100" required>
+                <br><br>
+
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <br><br>
+
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" name="phone"
+                    autocomplete="tel"
+                    pattern="\+380[0-9]{9}"
+                    title="Формат: +380671234567" required>
+                <br><br>
+
+                <label for="course">Курс навчання</label>
+                <input type="number" id="course" name="course" min="1" max="4" step="1" required>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Рівень підготовки</legend>
+                
+                <input type="radio" id="beginner" name="level" value="beginner">
+                <label for="beginner">Початківець</label>
+
+                <input type="radio" id="intermediate" name="level" value="intermediate">
+                <label for="intermediate">Середній</label>
+
+                <input type="radio" id="advanced" name="level" value="advanced">
+                <label for="advanced">Просунутий</label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Параметри проєкту</legend>
+
+                <label for="start_date">Дата початку участі</label>
+                <input type="date" id="start_date" name="start_date" min="2026-09-15" required>
+                <br><br>
+
+                <label for="stack">Технологічний стек</label>
+                <select id="stack" name="stack" required size="3">
+                    <optgroup label="Мови програмування">
+                        <option value="python">Python</option>
+                        <option value="cpp">C++</option>
+                    </optgroup>
+                    <optgroup label="Клієнтські технології">
+                        <option value="js">JavaScript</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <input type="checkbox" id="sorting" name="interests" value="sorting">
+                <label for="sorting">Алгоритми сортування</label><br>
+
+                <input type="checkbox" id="search" name="interests" value="search">
+                <label for="search">Алгоритми пошуку</label><br>
+
+                <input type="checkbox" id="graphs" name="interests" value="graphs">
+                <label for="graphs">Графи</label><br>
+
+                <input type="checkbox" id="trees" name="interests" value="trees">
+                <label for="trees">Дерева та структури даних</label>
+                <br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Додаткові дані</legend>
+
+                <label for="experience">Короткий опис досвіду</label><br>
+                <textarea id="experience" name="experience" 
+                    minlength="20" maxlength="500"
+                    rows="5" placeholder="Розкажіть коротко про свій досвід у програмуванні..."></textarea>
+                <br><br>
+
+                <label for="portfolio">Файл із портфоліо (необов'язково)</label>
+                <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx">
+                <br><br>
+            </fieldset>
+
+            <button type="submit" class="btn">Надіслати заявку</button>
+            <button type="reset" class="btn">Очистити форму</button>
+            <button type="button" id="preview-btn" class="btn visually-hidden">Попередний перегляд</button>
+        </form>
+
+        <form action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+            <label for="portfolio">Файл із портфоліо (можна вибрати кілька):</label>
+            <input type="file" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx" multiple>
+            <br><br>
+            <button type="submit" class="btn">Надіслати</button>
+        </form>
+
+        <div class="media">
+            <span class="media__icon" aria-hidden="true">ⓘ</span>
+            <p class="media__body">Підказка: оцініть складність алгоритму перед реалізацією.</p>
+        </div>
+    </main>
+</body>
+</html>
